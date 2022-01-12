@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <ul>
+    <ul id="menu">
         <li>
             <a href="index.html"> Home </a>
         </li>
@@ -16,31 +19,57 @@
         </li>
     </ul>
 
-    <h1>Entre em contato comigo</h1>
+    <h1 class="center">Entre em contato comigo</h1>
 
-    <form>
-        <label for="nome">Nome:</label> <br>
-        <input type="text" id="nome">
-        <br>
-        <br>
+    <div class="container mb-50">
 
-        <label for="email">Email:</label> <br>
-        <input type="email" id="email">
-        <br>
-        <br>
+        <div>
 
-        <label for="assunto">Assunto:</label> <br>
-        <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
+            <form>
+                <label for="nome">Nome:</label> <br>
+                <input type="text" onkeypress="mostraValor()" id="nome">
+                <p id="vr"></p>
 
-        <h2>Onde estamos:</h2>
-        <p>Shopping Boulevard Tatuapé</p>
-        <p>R. Gonçalves Crespo, 78 - Tatuapé, São Paulo - SP</p>
+                <label for="email">Email:</label> <br>
+                <input type="email" id="email">
+                <br>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6151.541777328209!2d-46.57866093758473!3d-23.54226103840223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ec2e1a484a3%3A0x1a8cdaf57a43d11!2sShopping%20Boulevard%20Tatuap%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1641843226931!5m2!1spt-BR!2sbr" 
-        width="450" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </form>
+                <label for="assunto">Assunto:</label> <br>
+                <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
+                <br>
+                <button>Enviar</button>
+
+            </form>
+        </div>
+
+        <div class="ml-50">
+
+            <p>Shopping Boulevard Tatuapé</p>
+            <p>R. Gonçalves Crespo, 78 - Tatuapé, São Paulo - SP</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6151.541777328209!2d-46.57866093758473!3d-23.54226103840223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ec2e1a484a3%3A0x1a8cdaf57a43d11!2sShopping%20Boulevard%20Tatuap%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1641843226931!5m2!1spt-BR!2sbr"
+                width="450" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <script src="assets/scripts/script.js"></script>
+    <hr>
+    <footer>
+        <div class="container">
+            <a href="https://www.facebook.com/vitor.crivelaro/" target="_blank">
+                <img class="tm-social p-30" src="assets/img/facebook.png" alt="Logo do Facebook">
+            </a>
+            <a href="https://www.instagram.com/vitorcrivelaro/" target="_blank">
+                <img class="tm-social p-30" src="assets/img/instagram.png" alt="Logo do Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/vitor-crivelaro-ab81bb91/" target="_blank">
+                <img class="tm-social p-30" src="assets/img/linkedin.png" alt="Logo do Linkedin">
+            </a>
+        </div>
+
+        <p class="center"> Todos os direitos reservados: Vitor Crivelaro &copy
+        </p>
+    </footer>
 </body>
+
 </html>
