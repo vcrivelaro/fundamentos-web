@@ -27,11 +27,14 @@
 
             <form>
                 <label for="nome">Nome:</label> <br>
-                <input type="text" onkeypress="mostraValor()" id="nome">
-                <p id="vr"></p>
+                <input type="text" onkeypress="mostraValor()" onkeyup="validaNome()" id="nome">
+                <p id ="vr" ></p>
+                <div id='txtNome'></div>
+                <br>
 
                 <label for="email">Email:</label> <br>
-                <input type="email" id="email">
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id='txtEmail'></div>
                 <br>
 
                 <label for="assunto">Assunto:</label> <br>
@@ -51,8 +54,6 @@
                 width="450" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
-
-    <script src="assets/scripts/script.js"></script>
     <hr>
     <footer>
         <div class="container">
@@ -70,6 +71,8 @@
         <p class="center"> Todos os direitos reservados: Vitor Crivelaro &copy
         </p>
     </footer>
+
+    <script src="assets/scripts/script.js"></script>
 </body>
 
 </html>
